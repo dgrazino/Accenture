@@ -136,7 +136,7 @@ Given("Listar os detalhes do usuário com os livros escolhidos", () => {
     }).then((response) => {
       expect(response.status).to.equal(200);
       cy.log('Descrição livro 1 ' + response.body.books[0].description)
-      cy.log('Descrição livro 2 ' + response.body.books[1].description)
+      cy.log('Descrição livro 2 ' + response.body.books[1].description )
     });
 });
 
